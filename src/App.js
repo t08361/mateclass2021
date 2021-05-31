@@ -1,6 +1,7 @@
 //import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
+import { Detail, Check, Settings, Challenge } from "./somethingscd ";
 
 function App() {
   return (
@@ -15,6 +16,13 @@ function App() {
       </div>
       <div className="Tail">
       </div>
+        <Switch>
+          <Route path="/" exact> </Route>
+          <Route path="/settings" component={Settings}> </Route>
+          <Route path="/detail" component={Detail}> </Route>
+          <Route path="/check" component={Check}> </Route>
+          <Route path="/5challenge" component={Challenge}> </Route>
+        </Switch>
       </BrowserRouter>
     </div>
   );
