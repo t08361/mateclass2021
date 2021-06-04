@@ -1,9 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 const Check = () => {
+    let [i, j] = useState('출석 확인')
+    
     return (
         <div>
-            <h2>출석 체크 완료</h2>
+            <button onClick={() => { j('출석완료') }}>{ i }</button>
         </div>
     );
 };
